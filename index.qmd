@@ -1,0 +1,354 @@
+---
+format: 
+  revealjs: 
+    transition: fade
+    theme: [default, custom.scss]
+    slide-number: true
+execute:
+  echo: false
+---
+
+## The Ecology of Agglomeration and<br>the Rise of Chaco Great Houses {.title-right background-image="figures/pueblo-bonito.jpg" background-size=contain}
+
+::: title-bottom
+`r Sys.Date()`  
+
+{{< fa brands github >}} [kbvernon/cu_ibs_2023-chaco_greathouses](https://github.com/kbvernon/cu_ibs_2023-chaco_greathouses)
+:::
+
+## What is it that you do?
+
+If I _don't_ want to talk to the person, I say, "I'm an archaeologist."
+
+. . .
+
+<br>
+
+If I _do_ want to talk to the person, [I _also_ say, "I'm an archaeologist."]{.fragment .fade-in}
+
+<br>
+
+::: {.fragment}
+And then I explain that I'm really a __behavioral ecologist__ that focuses on specifically human behavior, drawing on the archaeological record to test models and hypotheses about long term trends and their aggregate effects.
+:::
+
+## What is a Chaco great house?
+[Great Houses]{class="menu-title" style="display:none"}
+
+:::::: {.r-stack width=100% style="margin-top:1em;"}
+::: {.fragment .fade-out fragment-index=0}
+![](figures/great-house-outlines.png)
+:::
+::: {.fragment .fade-in fragment-index=0}
+![](figures/great-house-community.png)
+:::
+::::::
+
+::: aside
+Outlines adapted from [Van Dyke (2003)](https://doi.org/10.1080/00231940.2003.11758488), Figure 1.
+:::
+
+::: {.notes}
+1. Monumental architecture
+2. Often including a kiva enclosed by room blocks
+2. Much larger than other nearby settlements
+2. Found at auspicious locations
+2. Cluster of sites typically surround them
+:::
+
+## Why are great houses at these locations? {background-image="figures/chaco-world.png" background-size="contain"}
+[The Question]{class="menu-title" style="display:none"}
+
+::: aside
+[Map displays centroids of HUC10 watersheds with at least one great house.]{style="color:black;"}
+:::
+
+## A Modern Analog?
+
+![](figures/us-cities.png){.img0 width=80% fig-align="center"}
+
+::: aside
+Cities data retrieved from <https://simplemaps.com/data/us-cities> on 23/03/03.
+:::
+
+## Familiar Hypotheses
+
+1. [__Socioeconomic Productivity__]{.large}  
+    🚚 reduced transport costs, 👷 available labor️, 📈 scaling, historic inertia?
+2. [__Environmental Productivity__]{.large}  
+    🌳 natural resources, soil, 🌤️ climate️,💧 water! 
+
+. . .
+
+3. [__But cities are costly, too!__]{.large}  
+    More people means i) more competition for jobs, ii) higher rents, iii) more expensive food, iv) stress and anxiety
+
+## A Cartoon Model of History
+:::::: {.r-stack width=100% style="margin-top:0;"}
+::: {.fragment .fade-out fragment-index=0}
+![](figures/a-cartoon-of-human-history-01.png){.img0}
+:::
+::: {.fragment .fade-in-then-out fragment-index=0}
+![](figures/a-cartoon-of-human-history-02.png){.img0}
+:::
+::: {.fragment .fade-in fragment-index=1}
+![](figures/a-cartoon-of-human-history-03.png){.img0}
+:::
+::::::
+
+## Behavioral Ecology
+
+BE = Microeconomics + Darwin
+
+:::::: {.r-stack width=100% style="margin-top:0;" .flt}
+::: {.fragment .fade-out fragment-index=0}
+or, utility maximization where proximate utility contributes to long-term inclusive fitness  
+
+or, revealed preferences where preferences are shaped by natural selection  
+:::
+::: {.fragment .fade-in-then-out fragment-index=0}
+Not as reductionist as it may seem, simply the idea that people's behaviors are reasonable, that there are reasons why they do what they do.  
+
+Two key assumptions:  
+
+1. __Optimality__ - individuals will do what they should do to achieve their goals
+2. __Sufficient knowledge__ - individuals have a sufficient number of true beliefs about their circumstances to do that
+:::
+::: {.fragment .fade-in-then-out fragment-index=1}
+Sometimes referred to as the "principle of charity" or the "principle of rational accommodation."
+
+- To explain a behavior, we attribute to an individual a goal and a set of beliefs about their environment, including relevant constraints and trade-offs.  
+- If there is a mismatch, if the behavior appears sub-optimal, we must revise one of our descriptions, either of the behavior itself (how it is done), the goal, the beliefs, or the environment.  
+- This is rational accommodation, an attempt to understand the individual in their context.  
+- The fact that we can do this is owing to natural selection.
+:::
+::::::
+
+## The Ideal Free Distribution
+
+The __suitability__ $S_i$ of habitat $i$ is some function of its population density $D_i$
+
+$$S_i = Q_i - f(D_i) - C_i$$
+
+:::::: {.r-stack width=100% style="margin-top:0;" .flt}
+::: {.fragment .fade-out fragment-index=0}
+where
+
+- $Q_i$ is the pristine suitability of $i$ or the suitability when $f(D_i)=0$, and
+- $C_i$ is some additional cost of inhabiting $i$.
+
+⚠️ Suitability is a synonym for per capita productivity, though it is also a proxy for inclusive fitness.
+:::
+::: {.fragment .fade-in-then-out fragment-index=0}
+Can use this to model habitat selection.  
+
+![](figures/cartoon-habitat-selection.png){.img0 width=50% fig-align="center" style="margin-top:1em;"}
+:::
+::: {.fragment .fade-in-then-out fragment-index=1}
+![](figures/cartoon-ifd.png){.img0 width=75% fig-align="center"}
+:::
+::: {.fragment .fade-in fragment-index=2}
+
+What about scaling effects?  
+
+We can't just brush aside the collective action problem, but...  
+
+maybe we can loosen the requirement that $Q$ remain constant relative to density?
+:::
+::::::
+
+## So, what about great houses?
+
+:::::: {.columns}
+::::: {.column width=55%}
+![](figures/subregion-profiles.png)
+:::::
+::::: {.column width=45%}
+![](figures/greathouse-overview.png)
+:::::
+::::::
+
+## Familiar Hypotheses
+
+1. [__Socioeconomic Productivity__]{.large}  
+    🚚 reduced transport costs, 👷 available labor️, 📈 scaling, historic inertia?
+2. [__Environmental Productivity__]{.large}  
+    🌳 natural resources, soil, 🌤️ climate️,💧 water
+    
+## The Model
+
+:::::: {.r-stack .flt}
+::::: {.fragment .fade-out fragment-index=0}
+:::: {.columns}
+::: {.column width=45%}
+![](figures/watersheds.png)
+:::
+::: {.column width=55%}
+
+__Units of analysis__
+
+- Space: HUC 10 watersheds (N = 208) as defined by the USGS.  
+- Time: 25-year time steps (N = 33)
+
+__Project area__
+
+- Space: the extent of watersheds that overlap with the Chaco world
+- Time: years from 650 to 1450 (gives a buffer around start and end dates of Chaco great houses)
+
+:::
+::::
+:::::
+::::: {.fragment .fade-in-then-out fragment-index=0}
+__Proxies for productivity__
+
+- Socioeconomic productivity
+    - density per watershed of rooms at farms/pueblos   
+    - density per watershed of rooms at great houses
+    - assumption is that more rooms = more people
+- Environmental productivity 
+    - a paleo-climate reconstruction 
+    - average precipitation and 
+    - maize growing degree days (GDD)  
+:::::
+::::: {.fragment .fade-in-then-out fragment-index=1}
+__Response variables__
+
+Model we are using is a Bayesian spatio-temporal count model fit using INLA in R.<sup style="color:#6f6f6f;">1</sup>  
+
+Assumes the response is Poisson distributed:  
+
+$$O|E \sim Poisson(E\cdot O)$$
+
+where  
+
+$E$ is the density across the project area multiplied by the area of each watershed, so an expected count, and  
+
+$O$ is the ratio of the observed to the expected count, so values greater than one indicate a count greater than expected.
+
+[1. Still trying to wrap my head around this. Just started using this approach about three days ago...]{style="position: absolute; bottom: 20px; font-size: 0.7em; color: #6f6f6f;"}
+:::::
+::::: {.fragment .fade-in-then-out fragment-index=2}
+__Model specification__  
+Then model $O$ as a log-linear model:  
+
+$$log\,(O) = \alpha + \beta X + u + v + w + \epsilon$$
+
+where $u, v, w$ are random effects for space, time, and watershed. 
+
+Actually includes smooth terms for potential non-linear effects.  
+:::::
+::::: {.fragment .fade-in fragment-index=3}
+__Intuition?__
+
+We're not just modeling the locations of great houses, but their level of intensity relative to that of farm or pueblo sites.  
+
+And, we are modeling each as a function of the environment. 
+
+So, you can think of this model as answering the question: did some amount of historical inertia drive the distribution of great houses over and above environmental productivity?
+:::::
+::::::
+
+## Data sources
+
+<br>
+
+![](figures/cybersw.png){width=150px}  
+The archaeological data come from [cyberSW](https://cybersw.org/), _a cyberinfrastructure and collaborative space for conducting interdisciplinary research on and exploring the pre-Hispanic archaeological record of the US Southwest and Northwest Mexico_.  
+
+<br>
+
+[__SKOPE__]{.large}  
+[Synthesizing Knowledge of Past Environments]{style="font-weight:bold; color:#003C54 !important;"}  
+Paleo-climate data provided by [SKOPE](https://www.openskope.org/), specifically the [PaleoCAR](https://github.com/bocinsky/paleocar) model that regresses modern PRISM data on tree ring widths to hindcast past climates. 
+
+## Data issues
+
+:::::: {.r-stack width=100% style="margin-top:1em;" .flt}
+::: {.fragment .fade-out fragment-index=0}
+[__Resolution__]{.large}
+
+__Room counts and density__: The area of a Chaco community is typically assumed to be roughly 150 km<sup>2</sup> (based on walking speed), but the HUC10 watersheds used in this analysis are 2 or 3 times larger than that.  
+
+__Uncertainty__: Extremely difficult to measure our uncertainty around room count and density estimates.  
+
+__Environmental smoothing__: Aggregating climate variables to the watershed level may bias our estimates of environmental productivity.
+
+__Trade-off__: Using higher-resolution lattice data may capture more environmental variation, but it also increases the number of zero counts.
+
+:::
+::: {.fragment .fade-in-then-out fragment-index=0}
+[__Measurement__]{.large}
+
+__Sampling intensity__: Archaeological data mostly come from cultural resource compliance, which is in turn driven by federal projects, and those tend to happen more in some areas than others. 
+
+__Data integration__: Naming conventions and measurement standards are - let's say - inadequate in archaeology. That makes aggregating and comparing data in large regional analyses difficult. Can account for some of this using hierarchical models but _only if_ the variance across projects and regions is systematic.  
+:::
+::: {.fragment .fade-in fragment-index=1}
+Worth noting that many of the problems archaeologists face are structurally similar to those that ecologists wrestle with, so it's not like archaeologists are just out on a limb.
+
+:::
+::::::
+
+## Results
+
+:::::: {.r-stack width=100% style="margin-top:1em;" .flt}
+::: {.fragment .fade-out fragment-index=0}
+⚠️ These results are preliminary. Still experimenting with tuning the priors and other hyperparameters.
+:::
+::: {.fragment .fade-in-then-out fragment-index=0 style="text-align:center;"}
+Temporal Random Effects  
+![](figures/temporal-re.png){width=60% fig-align="center"}
+:::
+::: {.fragment .fade-in-then-out fragment-index=1 style="text-align:center;"}
+Spatial Random Effects
+![](figures/spatial-re.png)
+:::
+::: {.fragment .fade-in fragment-index=2 style="text-align:center;"}
+Partial Dependence  
+![](figures/partial-dependence.png){width=85% fig-align="center"}
+:::
+::::::
+
+## Chaco interventions
+
+:::::: {.r-stack width=100% style="margin-top:1em;" .flt}
+::: {.fragment .fade-out fragment-index=0}
+What happens to population growth when a great house is constructed?
+
+Can answer this with an interrupted-time series model.
+:::
+::: {.fragment .fade-in-then-out fragment-index=0}
+![](figures/intervention.png){.img0 width=100% fig-align="center"}
+
+[Year 0 is the first great house construction date for each watershed]{style="position: absolute; bottom: 20px; font-size: 0.7em; color: #6f6f6f;"}
+
+:::
+::: {.fragment .fade-in fragment-index=1}
+![](figures/intervention-highlights.png){.img0 width=100% fig-align="center"}
+
+[Year 0 is the first great house construction date for each watershed]{style="position: absolute; bottom: 20px; font-size: 0.7em; color: #6f6f6f;"}
+:::
+::::::
+
+## Acknowledgments {background-image="figures/chaco-masonry.jpg" background-size="contain"}
+
+::: {style="width:50%; text-align: left; margin: 0 auto auto 0;"}
+
+:::: {.columns width=65%}
+::: {.column width=25%}
+![](figures/nsf-official.png){width=100 style="margin:auto"} 
+:::
+::: {.column width=35%}
+![](figures/cybersw.png){width=150px style="margin-top:0.35em"} 
+:::
+::: {.column width=40%}
+![](figures/asw-logo.png){width=250 style="margin-top:0.65em"}   
+:::
+::::
+
+- Link O'Brennan (Studio Lab intern)
+- Scott Ortman  
+- Josh Watts  
+- Simon Brewer  
+
+:::
